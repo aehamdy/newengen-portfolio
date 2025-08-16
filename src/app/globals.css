@@ -6,21 +6,66 @@
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* Accent */
+  --color-accent-primary: #cce561;
+  --color-accent-secondary: #ff9b94;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Text / Content */
+  --color-content-light: #faf2e8; /* default text */
+  --color-content-dark: #242424; /* muted/secondary */
+  --color-content-highlight: #f7efe5; /* solutions */
+
+  /* Background / Surfaces */
+  --color-surface-primary: #334238; /* main background */
+  --color-surface-secondary: #faf2e8; /* light background */
+  --color-surface-dark: #242424; /* dark background */
+  --color-surface-highlight: #cce0d9; /* testimonial / special surface */
+  --color-surface-muted: #618c70; /* input bg, footer headings */
+
+  /* Typography font sizes */
+  --text-tiny: 0.54rem; /* 8.67px */
+  --text-small: 0.58rem; /* 9.29px */
+  --text-base: 0.62rem; /* 9.91px */
+  --text-medium: 0.7rem; /* 11.15px */
+  --text-large: 0.77rem; /* 12.38px */
+  --text-xlarge: 0.85rem; /* 13.62px */
+  --text-2xlarge: 1.4rem; /* 22.4px */
+  --text-3xlarge: 1.5rem; /* 24px */
+  --text-4xlarge: 2.2rem; /* 35.2px */
+  --text-5xlarge: 2.3rem; /* 36.8px */
+  --text-6xlarge: 3.79rem; /* 60.7px */
+  --text-7xlarge: 3.8rem; /* 60.8px */
+  --text-8xlarge: 6.31rem; /* 100.9px */
+  --text-9xlarge: 9.8rem; /* 156.8px */
+
+  /* Spacings */
+  --space-xs: 0.46rem; /* 7.43px */
+  --space-sm: 1rem; /* 16px */
+  --space-md: 1.5rem; /* 24px */
+  --space-lg: 2rem; /* 32px */
+  --space-xl: 3rem; /* 48px */
+  --space-2xl: 3.5rem; /* 56px */
+  --space-3xl: 4rem; /* 64px */
+  --space-4xl: 6rem; /* 96px → section inline padding */
+  --space-section: 15rem; /* 240px → section top & bottom padding */
+
+  /* Border radius */
+  --radius-none: 0rem; /* square */
+  --radius-sm: 0.25rem; /* 4px */
+  --radius-md: 0.5rem; /* 8px */
+  --radius-lg: 1rem; /* 16px */
+  --radius-xl: 1.5rem; /* 24px */
+  --radius-2xl: 2rem; /* 32px */
+  --radius-full: 9999px; /* pill / circle */
+
+  /* Durations */
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+  --duration-slower: 800ms;
+  --duration-slowest: 1200ms;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
