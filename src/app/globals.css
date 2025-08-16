@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-figtree: "Figtree", sans-serif;
 }
 
 @theme inline {
@@ -67,5 +68,5 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-figtree);
 }
