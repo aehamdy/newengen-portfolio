@@ -1,6 +1,6 @@
+import Button from "@/components/Button";
 import Navbar from "@/components/Navbar";
 import NavMenu from "@/components/NavMenu";
-import PrimaryButton from "@/components/PrimaryButton";
 
 function MainNav() {
   return (
@@ -8,7 +8,7 @@ function MainNav() {
       <div className="hidden md:flex">
         <Navbar />
 
-        <PrimaryButton>Let&apos;s talk</PrimaryButton>
+        <Button isPrimary>Let&apos;s talk</Button>
       </div>
 
       <NavMenu />
