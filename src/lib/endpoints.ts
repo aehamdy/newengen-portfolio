@@ -13,4 +13,9 @@ export const endpoints = {
     facebook: "#",
     instagram: "#",
   },
+  legal: {
+    privacyPolicy: "/privacy-policy",
+    cookiePolicy: "/cookie-policy",
+    termsAndConditions: "/terms-and-conditions",
+  },
 };
