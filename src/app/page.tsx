@@ -1,6 +1,5 @@
+import BrandSvg from "@/components/BrandSvg";
 import ClientsSection from "@/components/ClientsSection";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import Insights from "@/components/Insights";
 import SelectedWorkSection from "@/components/SelectedWorkSection";
@@ -11,8 +10,6 @@ import SolutionsSection from "@/components/SolutionsSection";
 export default function Home() {
   return (
     <main className="relative bg-surface-primary ">
-      <Header />
-
       <HeroSection />
 
       <SelectedWorkSection />
@@ -27,7 +24,7 @@ export default function Home() {
 
       <Insights />
 
-      <Footer />
+      <BrandSvg />
     </main>
   );
 }
