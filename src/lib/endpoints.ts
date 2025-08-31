@@ -8,4 +8,9 @@ export const endpoints = {
     technology: "/technology",
     company: "/company",
   },
+  socials: {
+    linkedIn: "#",
+    facebook: "#",
+    instagram: "#",
+  },
 };
