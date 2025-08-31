@@ -1,3 +1,5 @@
+import { endpoints } from "@/lib/endpoints";
+
 export type socialType = {
   id: number;
   title: string;
@@ -8,16 +10,16 @@ export const socials = [
   {
     id: 1,
     title: "LinkedIn",
-    href: "#",
+    href: endpoints.socials.linkedIn,
   },
   {
     id: 2,
     title: "Facebook",
-    href: "#",
+    href: endpoints.socials.facebook,
   },
   {
     id: 3,
     title: "Instagram",
-    href: "#",
+    href: endpoints.socials.instagram,
   },
 ];
