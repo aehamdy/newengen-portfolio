@@ -70,7 +70,7 @@ function Footer() {
               {socials.map((social) => (
                 <li
                   key={social.id}
-                  className="hover:text-accent-primary duration-normal"
+                  className="w-fit hover:text-accent-primary duration-normal"
                 >
                   <Link href={social.href} className="">
                     {social.title.charAt(0).toUpperCase() +
