@@ -1,4 +1,3 @@
-import BrandSvg from "@/components/BrandSvg";
 import ClientsSection from "@/components/ClientsSection";
 import HeroSection from "@/components/HeroSection";
 import Insights from "@/components/Insights";
@@ -23,8 +22,6 @@ export default function Home() {
       <SlidingImagesSection />
 
       <Insights />
-
-      <BrandSvg />
     </main>
   );
 }
