@@ -66,7 +66,7 @@ function Insights() {
           ))}
         </ul>
 
-        <Button isPrimary href={endpoints.nav.insights} className="">
+        <Button isPrimary href={endpoints.nav.insights}>
           View All
           <Icon
             name="arrow-right"
