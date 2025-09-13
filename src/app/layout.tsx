@@ -3,6 +3,7 @@ import { Figtree } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BrandSvg from "@/components/BrandSvg";
 
 const figtree = Figtree({
   subsets: ["latin"],
@@ -21,9 +22,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${figtree.variable} relative antialiased`}>
+      <body
+        className={`text-content-light bg-surface-primary ${figtree.variable} relative antialiased`}
+      >
         <Header />
+
         {children}
+
+        <BrandSvg />
         <Footer />
       </body>
     </html>
