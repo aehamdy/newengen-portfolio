@@ -3,6 +3,9 @@ import { insights } from "@/data/insights";
 import { siteConfig } from "@/lib/config";
 import Link from "next/link";
 import Image from "next/image";
+import Button from "@/components/Button";
+import { endpoints } from "@/lib/endpoints";
+import Icon from "@/components/Icon";
 
 function Insights() {
   return (
@@ -22,7 +25,7 @@ function Insights() {
           made to fuel brand growth.
         </p>
 
-        <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 md:gap-16 mt-6">
           {insights.map((insight) => (
             <li key={insight.id} className="group text-content-dark">
               <Link href={insight.link}>
@@ -62,6 +65,14 @@ function Insights() {
             </li>
           ))}
         </ul>
+
+        <Button isPrimary href={endpoints.nav.insights} className="">
+          View All
+          <Icon
+            name="arrow-right"
+            className="group-hover:translate-x-1 transition-all"
+          />
+        </Button>
       </div>
     </section>
   );
