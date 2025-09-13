@@ -7,7 +7,7 @@ import { legalLinks } from "@/data/legalLinks";
 
 function Footer() {
   return (
-    <footer className="flex flex-col gap-y-xl min-h-[85dvh] main-section-py main-section-px bg-orange-200 text-content-light border-t border-accent-primary/40">
+    <footer className="flex flex-col gap-y-xl min-h-[85dvh] main-section-py main-section-px bg-surface-primary border-t border-accent-primary/40">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-xl justify-between">
         <div className="flex flex-col items-start gap-md">
           <p className="w-full md:w-3/4">
