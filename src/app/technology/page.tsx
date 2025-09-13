@@ -1,6 +1,13 @@
 import TechnologyHero from "@/components/technology/TechnologyHero";
 import TechnologyImpact from "@/components/technology/TechnologyImpact";
 import TechnologyResults from "@/components/technology/TechnologyResults";
+import { siteConfig } from "@/lib/config";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: `Technology | ${siteConfig.name}`,
+  description: `${siteConfig.platform} is ${siteConfig.name}’s proprietary platform, purpose-built to fuel faster, smarter marketing across strategy, creative, media, and measurement.`,
+};
 
 function Technology() {
   return (
