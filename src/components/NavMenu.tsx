@@ -19,7 +19,12 @@ function NavMenu() {
         onClick={handleMenuClick}
         className="absolute z-[45] end-2 top-1/2 -translate-y-1/10 p-xs bg-accent-secondary rounded-sm cursor-pointer"
       >
-        {<Icon name={`${isMenuOpen ? "close" : "menu"}`} />}
+        {
+          <Icon
+            name={`${isMenuOpen ? "close" : "menu"}`}
+            className="text-content-dark"
+          />
+        }
       </button>
 
       {isMenuOpen && (
