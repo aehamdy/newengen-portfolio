@@ -18,4 +18,5 @@ export const endpoints = {
     cookiePolicy: "/cookie-policy",
     termsAndConditions: "/terms-and-conditions",
   },
+  apply: "/apply",
 };
